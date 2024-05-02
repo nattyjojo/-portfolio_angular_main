@@ -1,0 +1,28 @@
+
+<nav aria-label="Breadcrumb" class="flex justify-between">
+    <app-logo/>
+    <ol class="flex">
+        <li 
+        class="
+        m-2.5
+        font-sans
+        text-main-text
+        text-base
+        font-semibold
+        "
+         *ngFor="let anchorComponentData of anchorTextComponents">
+            <app-anchor-text 
+            [anchorText]="anchorComponentData.anchorText"
+            [anchorLink]="anchorComponentData.anchorLink"
+            [anchorTitle]="anchorComponentData.anchorTitle"
+            />
+        </li>
+    </ol>
+</nav>
+
+
+
+
+
+   
+    
