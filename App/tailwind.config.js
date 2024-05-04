@@ -7,7 +7,7 @@ module.exports = {
         primary: "#3e00ce", // Primary color for header and footer
         "button-bg": "#4c2aff", // Button background color
         "button-text": "#ffffff", // Button text color
-        "button-hover": "#693aff", // Button hover color
+        "button-hover": "#ffffff26", // Button hover color
         "main-bg": "#f8f8f8", // Main page background color
         "main-text": "#f8f8f8", // Main page text color
         text: "#333333", // Text color
@@ -22,26 +22,15 @@ module.exports = {
         display: ["Montserrat", "sans-serif"], // Font for headings
         body: ["Open Sans", "sans-serif"], // Font for body text
       },
-      fontSize: {
-        xs: "0.75rem", // Extra Small
-        sm: "0.875rem", // Small
-        base: "1rem", // Base
-        lg: "1.125rem", // Large
-        xl: "1.25rem", // Extra Large
-        "2xl": "1.5rem", // 2 Extra Large
-        "3xl": "1.875rem", // 3 Extra Large
-        "4xl": "2.25rem", // 4 Extra Large
-        "5xl": "3rem", // 5 Extra Large
-        "6xl": "4rem", // 6 Extra Large
-      },
-      padding: {
-        xs: "0.25rem", // Extra Small
-        sm: "0.5rem", // Small
-        base: "1rem", // Base
-        lg: "1.5rem", // Large
-        xl: "2rem", // Extra Large
-        "2xl": "3rem", // 2 Extra Large
-      },
+
+      // padding: {
+      //   xs: "0.25rem", // Extra Small
+      //   sm: "0.5rem", // Small
+      //   base: "1rem", // Base
+      //   lg: "1.5rem", // Large
+      //   xl: "2rem", // Extra Large
+      //   "2xl": "3rem", // 2 Extra Large
+      // },
       margin: {
         xs: "0.25rem", // Extra Small
         sm: "0.5rem", // Small

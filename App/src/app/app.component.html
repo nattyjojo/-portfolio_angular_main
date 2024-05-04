@@ -1,6 +1,14 @@
-<header class="bg-primary">
-    
-    <app-navigation/>
+<header class="bg-primary flex justify-between  py-3 px-6 items-center">
+    <app-logo class=""/> 
+    <app-navigation class="hidden md:block ml-auto md:mx-auto"/>
+    <div class="flex justify-between">
+    <app-search-engine  class="p-2"/>
+    <app-background-mode class="flex justify-around p-2"/>
+    </div>
+    <button title="click to viev navigation menu" type="button" class="text-slate-300 text-4xl p-2 pl-3 md:hidden">
+        &#9776;
+    </button>
+
 </header>
 
 <app-home-page/>

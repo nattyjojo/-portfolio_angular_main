@@ -1,14 +1,17 @@
 
-<nav aria-label="Breadcrumb" class="flex justify-between">
-    <app-logo/>
-    <ol class="flex">
+<nav aria-label="Breadcrumb" class="flex justify-between">   
+    <ul class="flex justify-between">
         <li 
         class="
-        m-2.5
+        p-2
         font-sans
         text-main-text
         text-base
         font-semibold
+        hover:border-b-2
+        hover:border-b-gray-300
+        hover:text-gray-400
+        
         "
          *ngFor="let anchorComponentData of anchorTextComponents">
             <app-anchor-text 
@@ -17,8 +20,10 @@
             [anchorTitle]="anchorComponentData.anchorTitle"
             />
         </li>
-    </ol>
+    </ul>
+    
 </nav>
+
 
 
 
