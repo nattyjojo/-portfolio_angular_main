@@ -1,2 +1,3 @@
 
-<button class="text-white text-3xl" title="change background mode" name="change background mode" type="button">&#x2600;</button>
+<button (click)="onClick($event)" title="change background mode" class="text-white" name="change background mode" type="button">
+    {{isDark() ?  "&#127765;" : "&#127761;" }}</button>

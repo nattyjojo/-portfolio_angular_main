@@ -1,15 +1,19 @@
-<header class="bg-primary flex justify-between  py-3 px-6 items-center">
-    <app-logo class=""/> 
-    <app-navigation class="hidden md:block ml-auto md:mx-auto"/>
-    <div class="flex justify-between">
-    <app-search-engine  class="p-2"/>
-    <app-background-mode class="flex justify-around p-2"/>
+
+
+<header  [class]="isDarkMode()  ? 'fixed w-[100vw] bg-secondary flex justify-between h-16 sm:h-20 p-6 items-center' : 'fixed w-[100vw] bg-primary flex justify-between h-16 sm:h-20 p-6 items-center' ">
+    <app-logo class="h-10 w-20 "/> 
+    <app-navigation class="hidden lg:block ml-auto md:mx-auto"/>
+    <div class="flex justify-between m-2">
+    <app-search-engine class="p-2 pt-3"/>
+    <app-background-mode class="p-3 text-2xl"/>
     </div>
-    <button title="click to viev navigation menu" type="button" class="text-slate-300 text-4xl p-2 pl-3 md:hidden">
+    <button (click)="onClick($event)"  name="menu" title="click to viev navigation menu" type="button" [class]=" isOpen() ?  ' invisible text-white text-2xl pb-1 font-bold lg:hidden' : 'visible text-white text-2xl pb-1 font-bold lg:hidden'">
         &#9776;
     </button>
 
 </header>
-
-<app-home-page/>
+<app-navigation [class]="isOpen() ? 'block fixed  md:mx-auto text-center lg:hidden ease-in-out duration-700' : ' hidden z-20 lg:hidden md:mx-auto text-center ease-in-out duration-800'"/>
+<main class="z-10 pt-20">
+    <app-home-page/>
+</main>
 <router-outlet />

@@ -1,17 +1,22 @@
 
-<nav aria-label="Breadcrumb" class="flex justify-between">   
-    <ul class="flex justify-between">
+<nav aria-label="Breadcrumb" class="p-4 pt-16 pb-10 lg:pb-0 lg:pt-2">
+    <div class="lg:bg-primary lg:pt-0 text-right pt-4 bg-unigue lg:hidden">
+    <button (click)="onClick($event)" type="menu" name="close menu" class="hover:text-gray-600 text-gray-200 text-2xl ml-2">🗙</button> 
+</div>
+    <ul class="sm:flex sm:justify-between bg-unigue lg:bg-primary">
+
         <li 
         class="
-        p-2
         font-sans
         text-main-text
-        text-base
+        lg:hover:text-base
         font-semibold
-        hover:border-b-2
-        hover:border-b-gray-300
         hover:text-gray-400
-        
+        hover:text-3xl
+        lg:hover:border-b-2
+        sm:hover:border-b-gray-300
+        px-6
+        py-1
         "
          *ngFor="let anchorComponentData of anchorTextComponents">
             <app-anchor-text 
@@ -21,7 +26,6 @@
             />
         </li>
     </ul>
-    
 </nav>
 
 
