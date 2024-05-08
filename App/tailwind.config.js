@@ -12,7 +12,7 @@ module.exports = {
         "button-hover": "#ffffff26", // Button hover color
         "main-bg": "#f8f8f8", // Main page background color
         "main-text": "#f8f8f8", // Main page text color
-        text: "#333333", // Text color
+        primaryText: "#FAFAFA", // Text color
         link: "#007bff", // Link color
         "link-hover": "#0056b3", // Link hover color
         accent1: "#ff7f00", // Accent color 1
@@ -24,6 +24,7 @@ module.exports = {
         display: ["Montserrat", "sans-serif"], // Font for headings
         body: ["Open Sans", "sans-serif"], // Font for body text
       },
+      darkMode: "class",
 
       // padding: {
       //   xs: "0.25rem", // Extra Small

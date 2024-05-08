@@ -35,3 +35,9 @@
         Categories or Topics: Organize blog posts into categories for easy navigation.
         Search Functionality: Include a search bar to help users find specific topics of interest.
         Author Bio: Provide information about yourself as the author, including a professional photo and brief bio.
+
+
+
+
+        I’m a full stack developer, specialized in development of web applications using React, Next.js, Node.js & more
+freelance full-stack developer.   software architect 
