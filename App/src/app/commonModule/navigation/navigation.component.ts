@@ -31,7 +31,6 @@ export class NavigationComponent {
   }
   
   onClick(event: MouseEvent){
-    console.log("hello")
     this.clickNotifierService.setIsOpen()
 
   }

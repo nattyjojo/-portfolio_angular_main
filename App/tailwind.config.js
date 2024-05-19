@@ -1,4 +1,5 @@
 /** @type {import('../tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
@@ -24,7 +25,9 @@ module.exports = {
         display: ["Montserrat", "sans-serif"], // Font for headings
         body: ["Open Sans", "sans-serif"], // Font for body text
       },
-      darkMode: "class",
+      backgroundImage: {
+        hero: "url('/../../assets/photo-of-laptop-frame.png')",
+      },
 
       // padding: {
       //   xs: "0.25rem", // Extra Small
