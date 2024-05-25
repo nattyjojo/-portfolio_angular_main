@@ -101,8 +101,8 @@
                 from our customers on a daily basis.</p>
         </div>
         <div  class="pt-4">
-            <button type="button" class="border py-2 px-4 rounded-md">❮</button>
-            <button type="button" class="border py-2 px-4 rounded-md ml-3">❯</button>
+            <button (click)="scrollLeftButton($event)" type="button" class="border py-2 px-4 rounded-md">❮</button>
+            <button (click)="scrollRightButton($event)" type="button" class="border py-2 px-4 rounded-md ml-3">❯</button>
         </div>
     </div>
     <div #scrollContainer class="flex justify-center align-middle gap-10 
@@ -234,7 +234,7 @@
 
 </div>
 <div (click)="onScrollClick($event)" class="bg-white mt-2 h-4 max-w-[40%] m-auto rounded-full">
-    <div [ngStyle]="{'margin.px': spanPosition}"   class="w-[10%] h-2 py-2 bg-green-500 rounded-full my-auto"></div>
+    <div [ngStyle]="{'transform': 'translateX(' + spanPosition + 'px)'}"   class="w-[10%] h-2 py-2 bg-green-500 rounded-full my-auto"></div>
 </div>
 </section>
 
