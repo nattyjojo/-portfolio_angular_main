@@ -1,10 +1,11 @@
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common'; // Import CommonModule
+import { SkillsSectionComponent } from '../skills-section/skills-section.component';
 
 @Component({
   selector: 'app-home-profile',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, SkillsSectionComponent],
   templateUrl: './home-profile.component.html',
   styleUrl: './home-profile.component.css'
 })

@@ -1,0 +1,458 @@
+<section
+  id="skills-section"
+  class="bg-[#121833] py-20 min-h-[90vh] max-h-[90vh] overflow-scroll flex justify-center text-lg"
+>
+  <div class="leading-10">
+    <div>
+      <nav class="mb-10">
+        <ul class="flex gap-7 justify-center text-xl text-white font-bold">
+          <li (click)="skillsClick($event)">
+            <button
+              [ngClass]="{
+                'border-b-2': getSkills(),
+                'border-b-0': !getSkills()
+              }"
+            >
+              Skills
+            </button>
+          </li>
+          <li (click)="experienceClick($event)">
+            <button
+              [ngClass]="{
+                'border-b-2': getExperince(),
+                'border-b-0': !getExperince()
+              }"
+            >
+              EXPERIENCE
+            </button>
+          </li>
+          <li (click)="certificatesClick($event)">
+            <button
+              [ngClass]="{
+                'border-b-2': getCertificates(),
+                'border-b-0': !getCertificates()
+              }"
+            >
+              Certificates
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div *ngIf="getSkills()" class="text-gray-50 m-auto">
+        <img src="../../../assets/frontend.png" alt="front end image" />
+        <ul>
+          <li>
+            <strong>Front-End Development</strong>
+            <ul class="list-disc my-10">
+              <li>
+                Core Technologies
+                <br />
+                <ul class="grid md:grid-cols-3 gap-10 list-decimal px-20">
+                  <li>
+                    <a
+                      href="https://www.w3schools.com/html/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >HTML (Hypertext Markup Language)</a
+                    >
+                    <i
+                      title="html"
+                      class="ml-2 fa-brands fa-html5 fa-2xl fa-beat"
+                      style="color: #c64600"
+                    ></i>
+
+                    <ul class="list-disc ml-10">
+                      <li>
+                        <a
+                          href="https://www.w3schools.com/html/html5_semantic_elements.asp"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Semantic HTML</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.w3schools.com/html/html_accessibility.asp"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Accessibility best practices (ARIA)</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    CSS (Cascading Style Sheets)
+                    <i
+                      title="css"
+                      class="ml-2 fa-brands fa-css3-alt fa-2xl fa-bounce"
+                      style="color: #1a5fb4; margin: 0 10px"
+                    ></i>
+
+                    <ul class="list-disc ml-10">
+                      <li>
+                        <a
+                          href="https://www.w3schools.com/css/default.asp"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >CSS Grid</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.w3schools.com/css/css3_flexbox.asp"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Flexbox</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.w3schools.com/html/html_responsive.asp"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Responsive Design</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.w3schools.com/sass/sass_intro.php"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Preprocessors (Sass, LESS)</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    JavaScript
+                    <i
+                      title="javascript"
+                      class="ml-2 fa-brands fa-square-js fa-flip fa-2xl"
+                      style="color: rgb(247, 224, 37)"
+                    ></i>
+
+                    <ul class="list-disc ml-10">
+                      <li>
+                        <a
+                          href="https://www.w3schools.com/js/js_es6.asp"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >ES6+ features</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.w3schools.com/js/js_htmldom.asp"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >DOM Manipulation</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.w3schools.com/js/js_events.asp"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Event Handling</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.w3schools.com/js/js_api_fetch.asp"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Fetch API / AJAX
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.w3schools.com/js/js_hoisting.asp"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Closures, Scope, and Hoisting</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Front-End Frameworks and Libraries
+
+                <ul class="grid md:grid-cols-3 gap-10 list-decimal px-10">
+                  <li>
+                    React
+                    <i
+                      title="react"
+                      class="ml-2 fa-brands fa-react fa-spin fa-2xl"
+                      style="color: rgb(25, 112, 127); margin: 0 10px"
+                    ></i>
+
+                    <ul class="list-disc ml-10">
+                      <li>JSX</li>
+                      <li>State Management (Redux, Context API)</li>
+                      <li>Hooks</li>
+                      <li>React Router</li>
+                      <li>Next.js</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Angular
+                    <i
+                      class="ml-2 fa-brands fa-angular fa-2xl fa-beat"
+                      style="color: #c23714"
+                    ></i>
+                    <ul class="list-disc ml-10">
+                      <li>Angular CLI</li>
+                      <li>TypeScript</li>
+                      <li>RxJS</li>
+                      <li>Angular Material</li>
+                    </ul>
+                  </li>
+                  <li>
+                    State Management
+                    <i
+                      class="ml-2 fa-solid fa-memory fa-2xl"
+                      style="color: #63e6be"
+                    ></i>
+                    <ul class="list-disc ml-10">
+                      <li>Redux</li>
+                      <li>Context API (React)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Build Tools
+                    <i class="fa-solid fa-screwdriver-wrench fa-2xl ml-2"></i>
+                    <ul class="list-disc ml-10">
+                      <li>Webpack</li>
+                      <li>Parcel</li>
+                      <li>Vite</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Version Control
+                    <i
+                      class="ml-2 fa-2xl fa-solid fa-code-compare"
+                      style="color: #b197fc"
+                    ></i>
+                    <ul class="list-disc ml-10">
+                      <li>GitHub</li>
+                      <li>GitLab</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Package Managers
+                    <i class="inline-block ml-2 fa-2xl fa-brands fa-yarn"></i>
+                    <ul class="list-disc ml-10">
+                      <li>npm</li>
+                      <li>Yarn</li>
+                      <li>pnpm</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Testing
+                    <i class="ml-2 fa-2xl fa-solid fa-stethoscope"></i>
+                    <ul class="list-disc ml-10">
+                      <li>Jest</li>
+                      <li>React Testing Library</li>
+                      <li>Angular Testing Library</li>
+                      <li>Enzyme (for React)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Performance Optimization
+                    <i class="ml-2 fa-2xl fa-solid fa-chart-simple"></i>
+                    <ul class="list-disc ml-10">
+                      <li>Lighthouse</li>
+                      <li>Webpack Bundle Analyzer</li>
+                      <li>Code Splitting</li>
+                      <li>Lazy Loading</li>
+                      <li>Minification and Compression</li>
+                    </ul>
+                  </li>
+                  <li class="list-decimal">
+                    Development Tools
+                    <i class="ml-2 fa-2xl fa-solid fa-gear"></i>
+                    <ul class="list-disc ml-10">
+                      <li>
+                        Code Editors
+                        <ul>
+                          <li>Visual Studio Code</li>
+                        </ul>
+                      </li>
+                      <li>
+                        Browser DevTools
+                        <ul>
+                          <li>Chrome DevTools</li>
+                          <li>Firefox Developer Tools</li>
+                        </ul>
+                      </li>
+                      <li>Terminal and Command Line</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    API Integration
+                    <i class="ml-2 fa-2xl fa-brands fa-webflow"></i>
+                    <ul class="list-disc ml-10">
+                      <li>RESTful APIs</li>
+                      <li>GraphQL</li>
+                      <li>WebSockets</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Deployment and Hosting
+                    <i class="ml-2 fa-2xl fa-solid fa-server"></i>
+                    <ul class="list-disc ml-10">
+                      <li>Netlify</li>
+                      <li>Vercel</li>
+                      <li>GitHub Pages</li>
+                      <li>AWS Amplify</li>
+                      <li>Firebase Hosting</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <img src="../../../assets/sever.png" alt="front end image" />
+            <strong>Back-End Development</strong>
+            <ul class="m-10 list-decimal grid grid-cols-2 md:grid-cols-3">
+              <li>
+                Languages
+                <i class="inline-block ml-2 fa-2xl fa-solid fa-laptop-code"></i>
+                <ul class="list-disc ml-10">
+                  <li>JavaScript (Node.js)</li>
+                  <li>Python (Django, Flask)</li>
+                </ul>
+              </li>
+              <li>
+                Databases
+                <i class="ml-2 fa-2xl inline-block fa-solid fa-database"></i>
+                <ul>
+                  <li>
+                    SQL
+                    <ul>
+                      <li>MySQL</li>
+                      <li>PostgreSQL</li>
+                      <li>SQLite</li>
+                    </ul>
+                  </li>
+                  <li>
+                    NoSQL
+                    <ul>
+                      <li>MongoDB</li>
+                      <li>Redis</li>
+                      <li>Cassandra</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Web Servers
+                <i class="ml-2 fa-2xl inline-block fa-solid fa-server"></i>
+                <ul>
+                  <li>Apache</li>
+                  <li>Nginx</li>
+                </ul>
+              </li>
+              <li>
+                API Development
+                <ul>
+                  <li>REST</li>
+                  <li>GraphQL</li>
+                  <li>gRPC</li>
+                </ul>
+              </li>
+              <li>
+                Authentication and Authorization
+                <i
+                  class="ml-2 fa-2xl inline-block fa-solid fa-building-lock"
+                ></i>
+                <ul>
+                  <li>OAuth</li>
+                  <li>JWT (JSON Web Tokens)</li>
+                  <li>Session Management</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            Soft Skills
+            <ul class="m-10 list-decimal grid grid-cols-3">
+              <li>Problem Solving</li>
+              <li>Attention to Detail</li>
+              <li>Communication Skills</li>
+              <li>Collaboration and Teamwork</li>
+              <li>Adaptability and Continuous Learning</li>
+            </ul>
+          </li>
+          <li>
+            Others
+            <ul class="m-10 list-decimal grid grid-cols-3">
+              <li>TypeScript</li>
+              <li>Progressive Web Apps (PWAs)</li>
+              <li>Service Workers</li>
+              <li>WebAssembly</li>
+              <li>
+                Static Site Generators
+                <ul class="list-disc ml-10">
+                  <li>Gatsby</li>
+                  <li>Hugo</li>
+                  <li>Jekyll</li>
+                </ul>
+              </li>
+              <li>
+                Content Management Systems
+                <ul class="list-disc ml-10">
+                  <li>WordPress</li>
+                  <li>Contentful</li>
+                </ul>
+              </li>
+              <li>Headless CMS</li>
+              <li>SEO (Search Engine Optimization) Best Practices</li>
+              <li>Internationalization (i18n)</li>
+              <li>DevOps Basics</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div *ngIf="getExperince()" class="text-white">
+      <header>
+        <h2>Full Stack Engineer Internship at Telenet</h2>
+      </header>
+      <div class="grid grid-cols-3 gap-20">
+        <p>
+          <strong>Position:</strong> Full Stack Engineer<br />
+          <strong>Company:</strong> Telenet<br />
+          <strong>Type:</strong> Internship<br />
+          <strong>Duration:</strong> Jan 2024 - present (6 months)<br />
+          <strong>Location:</strong> Belgium (Hybrid)<br />
+          <strong>Technologies Used:</strong> Python
+        </p>
+        <p>
+          <strong>Position:</strong> Full Stack Engineer<br />
+          <strong>Company:</strong> Telenet<br />
+          <strong>Type:</strong> Internship<br />
+          <strong>Duration:</strong> Jan 2024 - present (6 months)<br />
+          <strong>Location:</strong> Belgium (Hybrid)<br />
+          <strong>Technologies Used:</strong> Python
+        </p>
+        <p>
+          <strong>Position:</strong> Full Stack Engineer<br />
+          <strong>Company:</strong> Telenet<br />
+          <strong>Type:</strong> Internship<br />
+          <strong>Duration:</strong> Jan 2024 - present (6 months)<br />
+          <strong>Location:</strong> Belgium (Hybrid)<br />
+          <strong>Technologies Used:</strong> Python
+        </p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="getCertificates()"></div>
+</section>
